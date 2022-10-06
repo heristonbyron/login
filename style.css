@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: #4b00fa;
+    display:flex; /* Ajusta as divs lado a lado */
+    justify-content: center; /* Ajusta os componentes no eixo x */
+    align-items: center; /* Ajusta os componentes no eixo y */
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display:flex; /* Ajusta as divs lado a lado */
+    justify-content: center; /* Ajusta os componentes no eixo x */
+    align-items: center; /* Ajusta os componentes no eixo y */
+    flex-direction: column; /* Títulos um abaixo do outro */
+}
+
+/* h1 filho da .left-login */
+.left-login > h1 {
+    font-size: 3vw;
+    color: #ffffff;
+    
+}
+
+.left-login-image {
+    width: 30vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display:flex; /* Ajusta as divs lado a lado */
+    justify-content: center; /* Ajusta os componentes no eixo x */
+    align-items: center; /* Ajusta os componentes no eixo y */
+}
+
+.card-login{
+    width: 90%;
+    display:flex; /* Ajusta as divs lado a lado */
+    justify-content: center; /* Ajusta os componentes no eixo x */
+    align-items: center; /* Ajusta os componentes no eixo y */
+    flex-direction: column; /* Títulos um abaixo do outro */
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056; /* Inserir bordas */
+}
+
+.card-login > h1 {
+    color: #00ff88;
+    font-weight: 800; /* Peso da Fonte */
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056; /* Inserir bordas */
+    outline: none ;
+    box-sizing: border-box; /* Ajustar tamanho quando utrapassa as restrições de tamanhos */
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase ;
+    font-weight: 800;
+    letter-spacing: 3px ; /* Espaçamento esntre as letras */
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer; /* Quando a seta está por cima do botão */
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
